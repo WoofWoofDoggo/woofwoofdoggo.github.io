@@ -1,0 +1,224 @@
+/** 
+    Fonts
+**/
+
+.gelasio {
+    font-family: "Gelasio", sans-serif;
+    font-weight: normal;
+}
+
+.manjari {
+    font-family: "Manjari", sans-serif;
+}
+
+.system-font {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/** 
+`   Splitscreen content layout 
+**/
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.center {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.r-content {
+    left: 0;
+    display: inline-block;
+
+    padding-left: 20px;
+}
+
+.l-content {
+    right: 0;
+    display: inline-block;
+
+    padding-right: 20px;
+}
+
+/** 
+    Actual content 
+**/
+
+body {
+    background-color: #1a1a1a;
+    color: #e3e1e1;
+}
+
+#logo {
+    width: 64px;
+    height: 64px;
+    vertical-align: text-bottom;
+}
+
+#name {
+    display: inline-block;
+    padding-right: 10px;
+
+    font-size: 34px;
+}
+
+#name-container {
+    height: 64px;
+    padding-bottom: 20px;
+}
+
+#farewell-golden {
+    color: #00e2e2;
+}
+
+.social-icon {
+    height: 24px;
+    padding-right: 8px;
+    width: 24px;
+}
+
+.yt-icon {
+    padding-top: 4px;
+    padding-right: 8px;
+    height: 18px;
+    width: 24px;
+}
+
+.twitch-icon {
+    padding-top: 4px;
+    padding-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.speedrun-icon {
+    padding-top: 2px;
+    padding-right: 6px;
+    width: 24px;
+    height: 24px;
+}
+
+.repo-image {
+    vertical-align: text-bottom;
+    padding-right: 6px;
+}
+
+.repo-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e3e1e1;
+}
+
+#projects-text {
+    margin-bottom: 2px;
+}
+
+.repo-a {
+    margin-top: 0px;
+}
+
+/**
+    Transitions
+**/
+
+#name {
+    animation: fade-in-move-down 0.6s;
+}
+
+#logo {
+    animation: fade-in-move-down 0.6s;
+    animation-delay: 0.2s;
+
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.social-transition {
+    opacity: 0;
+}
+
+.social-icon {
+    animation: fade-in-move-down 0.4s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.yt-icon {
+    animation: fade-in-move-down 0.4s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.twitch-icon {
+    animation: fade-in-move-down 0.4s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.speedrun-icon {
+    animation: fade-in-move-down 0.4s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#about {
+    animation: fade-in-move-down 1s;
+    animation-delay: 0.2s;
+
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#projects-text {
+    animation: fade-in-move-down 0.7s;
+    animation-delay: 0.4s;
+
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.repo {
+    opacity: 0;
+}
+
+.repo-a {
+    animation: fade-in-move-down 0.7s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.repo-b {
+    animation: fade-in-move-down 0.7s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-move-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
