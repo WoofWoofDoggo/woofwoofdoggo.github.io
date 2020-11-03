@@ -1,24 +1,25 @@
 <!DOCTYPE HTML>
-<html>
+<html onload="onload()">
     <!-- Hi there (: -->
 
     <head>
-        <title>doggo.</title>
+        <title>woofdoggo</title>
 
-        <link rel="stylesheet" href="index.css"/>
+        <link href="index.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Gelasio:400,400i|Manjari&display=swap" rel="stylesheet"> 
-        <link rel="icon" href="logo.png"/>
+		<link href="logo.png" rel="icon"/>
+		<script src="./index.js"></script>
 
         <link rel="canonical" href="https://woofwoofdoggo.github.io">
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=0.5">
         
-        <meta name="description" content="the home of doggo">
+        <meta name="description" content="woofdoggo's website">
         <meta name="author" content="WoofWoofDoggo">
 
         <meta property="og:title" content="WoofWoofDoggo">
         <meta property="og:url" content="https://woofwoofdoggo.github.io">
-        <meta property="og:description" content="WoofWoofDoggo's website.">
+        <meta property="og:description" content="woofdoggo's website">
         <meta property="og:locale" content="en_GB">
 
         <meta property="og:image" content="https://raw.githubusercontent.com/WoofWoofDoggo/woofwoofdoggo.github.io/master/logo.png">
@@ -49,23 +50,48 @@
                     <a href="https://www.speedrun.com/woofdoggo/">
                         <img src="./social/speedrun.png" class="speedrun-icon social-transition" align="right" alt="Speedrun"/>
                     </a>
-                </div>
+				</div>
+				<div id="navbar" class="gelasio">
+					<br/><a href="#about" class="link-text about-nav">about</a><br/>
+					<a href="#achievements" class="link-text achievements-nav">achievements</a>
+				</div>
             </div>
         </div>
         <div class="split right">
             <div class="center r-content gelasio">
-                <p class="gelasio" id="about">
-                    Hi, I code stuff and play video games.<br/>
-                    I'm not great at either of those things.
-                    <br/><br/>
-                    I'm the 14th in the world to<br/>
-                    get the <a id="farewell-golden" href="https://www.youtube.com/watch?v=wSocbDzgYg8">Farewell golden berry.</a>
-                </p>
-                <div id="repos">
-                    <p class="gelasio" id="projects-text">Current Projects</p>
-                    <a class="system-font repo-text repo repo-a" href="https://github.com/WoofWoofDoggo/CelesteTAS"><img class="repo-image" src="./social/repo.svg" width="12" height="16" align="bottom"/>CelesteTAS</a><br/>
-                    <a class="system-font repo-text repo repo-b" href="https://github.com/EverestAPI/SpringCollab2020"><img class="repo-image" src="./social/repo.svg" width="12" height="16" align="bottom"/>SpringCollab2020</a>
-                </div>
+				<div id="about-container">
+					<p class="gelasio" id="about">
+						Hi, I play video games and<br/>
+						sometimes make stuff too.
+					</p>
+					<div id="repos">
+						<p class="gelasio" id="projects-text">Current Projects</p>
+						<a class="system-font repo-text repo repo-a" href="https://github.com/YetAnotherHelper/YetAnotherHelper"><img class="repo-image" src="./social/repo.svg" width="12" height="16" align="bottom"/>YetAnotherHelper</a><br/>
+					</div>
+				</div>
+				<div id="achievements-container">
+					<ul id="achievements">
+
+						<li>Celeste</li>
+						<ul id="achievements-celeste">
+							<li>
+								<a href="https://www.youtube.com/watch?v=HbWKwjLWy98&list=PLaXRNdLTR4hJbvw947dWHZqeDWx-KxQxO" class="link-text-highlight">All 202 Strawberries</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/watch?v=Jo5B1gp1R_A&list=PLaXRNdLTR4hLQL6IKhZM_iFBsui7UB9r5" class="link-text-highlight">D-Side Golden Strawberries</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/watch?v=kWsWrcfH0cY&list=PLaXRNdLTR4hI5Ua9i1DfhHfVZzNHK3HIz" class="link-text-highlight">Custom Map Golden Strawberries</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/watch?v=uLYl-uQcZIo&list=PLaXRNdLTR4hKx7E_F3zPcgHYI64Kom_II" class="link-text-highlight">Spring Collab 2020</a>
+							</li>
+						</ul>
+					</ul>
+					<p id="achievements-text">
+						Hopefully this list will continue to expand :)
+					</p>
+				</div>
             </div>
         </div>
     </body>
