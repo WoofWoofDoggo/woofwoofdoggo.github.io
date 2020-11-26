@@ -260,11 +260,11 @@ body {
     animation-fill-mode: forwards;
 }
 
-/*.repo-b {
+.repo-b {
     animation: fade-in-move-down 0.7s;
     animation-delay: 0.9s;
     animation-fill-mode: forwards;
-}*/
+}
 
 #achievements-container {
     animation: fade-in-move-down 1s;
